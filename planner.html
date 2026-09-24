@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="brand">
+            <h2>StudyFlow</h2>
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="planner.html" class="active">Planner</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="progress.html">Progress</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="page-title">
+            <div>
+                <h1>Study Planner</h1>
+                <p>Organize your tasks and assignments.</p>
+            </div>
+
+            <a href="#task-form" class="main-btn small-btn">
+                + Add Task
+            </a>
+        </div>
+
+        <!-- Task Summary -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div>
+                    <h3>8</h3>
+                    <p>Total Tasks</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div>
+                    <h3>5</h3>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <div>
+                    <h3>3</h3>
+                    <p>Pending</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <div>
+                    <h3>62%</h3>
+                    <p>Progress</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Search -->
+
+        <section class="card">
+
+            <div class="search-area">
+
+                <input type="text" placeholder="Search tasks...">
+
+                <button class="filter-btn active">
+                    All
+                </button>
+
+                <button class="filter-btn">
+                    Pending
+                </button>
+
+                <button class="filter-btn">
+                    Completed
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Tasks -->
+
+        <section class="card">
+
+            <div class="card-header">
+                <h2>My Tasks</h2>
+                <span>8 Tasks</span>
+            </div>
+
+            <div class="task-list">
+
+                <div class="planner-task">
+
+                    <div class="task-check">
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="task-details">
+                        <h3>Complete DBMS Assignment</h3>
+                        <p>Database Management System</p>
+                        <span>Deadline: 25 September</span>
+                    </div>
+
+                    <span class="priority high">High</span>
+
+                    <div class="task-actions">
+                        <a href="#task-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+
+                </div>
+
+                <div class="planner-task">
+
+                    <div class="task-check">
+                        <input type="checkbox" checked>
+                    </div>
+
+                    <div class="task-details completed-task">
+                        <h3>Study Machine Learning</h3>
+                        <p>Machine Learning</p>
+                        <span>Deadline: 26 September</span>
+                    </div>
+
+                    <span class="priority medium">Medium</span>
+
+                    <div class="task-actions">
+                        <a href="#task-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+
+                </div>
+
+                <div class="planner-task">
+
+                    <div class="task-check">
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="task-details">
+                        <h3>Practice CSS Grid</h3>
+                        <p>Web Development</p>
+                        <span>Deadline: 27 September</span>
+                    </div>
+
+                    <span class="priority low">Low</span>
+
+                    <div class="task-actions">
+                        <a href="#task-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Add Task Form -->
+
+        <section class="card" id="task-form">
+
+            <h2>Add New Task</h2>
+
+            <form class="task-form">
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Task Title</label>
+                        <input type="text" placeholder="Enter task title">
+                    </div>
+
+                    <div>
+                        <label>Subject</label>
+                        <input list="subjects" placeholder="Enter subject">
+
+                        <datalist id="subjects">
+                            <option value="Machine Learning">
+                            <option value="DBMS">
+                            <option value="Computer Networks">
+                            <option value="Web Development">
+                            <option value="DAA">
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label>Deadline</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label>Priority</label>
+                        <select>
+                            <option>Low</option>
+                            <option selected>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <label>Description</label>
+
+                <textarea rows="4" placeholder="Enter task description"></textarea>
+
+                <button type="submit" class="main-btn">
+                    Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
