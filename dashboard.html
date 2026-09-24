@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="brand">
+            <h2>StudyFlow</h2>
+        </div>
+
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="planner.html">Planner</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="progress.html">Progress</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <section class="welcome-section">
+            <div>
+                <h1>Good Morning, Student!</h1>
+                <p>Let's make today productive.</p>
+            </div>
+
+            <div class="date-box">
+                <strong>Today's Plan</strong>
+                <span>Stay focused and complete your goals.</span>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div>
+                    <h3>8</h3>
+                    <p>Total Tasks</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div>
+                    <h3>5</h3>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <div>
+                    <h3>3</h3>
+                    <p>Pending</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <div>
+                    <h3>62%</h3>
+                    <p>Progress</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Dashboard Content -->
+
+        <section class="dashboard-grid">
+
+            <div class="card">
+
+                <div class="card-header">
+                    <h2>Recent Tasks</h2>
+                    <a href="planner.html">View All</a>
+                </div>
+
+                <div class="task-item">
+                    <div>
+                        <h3>Complete DBMS Assignment</h3>
+                        <p>Database Management System</p>
+                    </div>
+                    <span class="priority high">High</span>
+                </div>
+
+                <div class="task-item">
+                    <div>
+                        <h3>Study Machine Learning</h3>
+                        <p>Machine Learning</p>
+                    </div>
+                    <span class="priority medium">Medium</span>
+                </div>
+
+                <div class="task-item">
+                    <div>
+                        <h3>Practice CSS Grid</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <span class="priority low">Low</span>
+                </div>
+
+            </div>
+
+            <div class="card progress-card">
+
+                <h2>Overall Progress</h2>
+
+                <div class="progress-circle">
+                    <span>62%</span>
+                </div>
+
+                <p>Keep going! You are making good progress.</p>
+
+                <a href="progress.html" class="secondary-btn">
+                    View Progress
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
