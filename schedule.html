@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="brand">
+            <h2>StudyFlow</h2>
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="planner.html">Planner</a>
+            <a href="schedule.html" class="active">Schedule</a>
+            <a href="progress.html">Progress</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="page-title">
+
+            <div>
+                <h1>Study Schedule</h1>
+                <p>Plan your study sessions.</p>
+            </div>
+
+            <a href="#schedule-form" class="main-btn small-btn">
+                + Add Session
+            </a>
+
+        </div>
+
+        <!-- Week Navigation -->
+
+        <section class="week-navigation">
+
+            <a href="#" class="week-arrow">←</a>
+
+            <div>
+                <h2>This Week</h2>
+                <p>22 September - 28 September</p>
+            </div>
+
+            <a href="#" class="week-arrow">→</a>
+
+        </section>
+
+        <!-- Schedule -->
+
+        <section class="schedule-grid">
+
+            <div class="day-card">
+
+                <h3>Monday</h3>
+                <p class="day-date">22 Sep</p>
+
+                <div class="session">
+                    <span class="session-time">10:00 AM</span>
+                    <h4>DBMS Study</h4>
+                    <p>Database Management</p>
+                    <div class="session-actions">
+                        <a href="#schedule-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="day-card">
+
+                <h3>Tuesday</h3>
+                <p class="day-date">23 Sep</p>
+
+                <div class="session">
+                    <span class="session-time">4:30 PM</span>
+                    <h4>Machine Learning</h4>
+                    <p>Regression Topics</p>
+                    <div class="session-actions">
+                        <a href="#schedule-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="day-card">
+
+                <h3>Wednesday</h3>
+                <p class="day-date">24 Sep</p>
+
+                <div class="session">
+                    <span class="session-time">5:00 PM</span>
+                    <h4>Web Development</h4>
+                    <p>CSS Responsive Design</p>
+                    <div class="session-actions">
+                        <a href="#schedule-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="day-card">
+
+                <h3>Thursday</h3>
+                <p class="day-date">25 Sep</p>
+
+                <div class="empty-session">
+                    No sessions planned
+                </div>
+
+            </div>
+
+            <div class="day-card">
+
+                <h3>Friday</h3>
+                <p class="day-date">26 Sep</p>
+
+                <div class="session">
+                    <span class="session-time">6:00 PM</span>
+                    <h4>Computer Networks</h4>
+                    <p>LAN and VLAN</p>
+                    <div class="session-actions">
+                        <a href="#schedule-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="day-card">
+
+                <h3>Saturday</h3>
+                <p class="day-date">27 Sep</p>
+
+                <div class="empty-session">
+                    No sessions planned
+                </div>
+
+            </div>
+
+            <div class="day-card">
+
+                <h3>Sunday</h3>
+                <p class="day-date">28 Sep</p>
+
+                <div class="session">
+                    <span class="session-time">10:00 AM</span>
+                    <h4>Revision</h4>
+                    <p>Weekly Revision</p>
+                    <div class="session-actions">
+                        <a href="#schedule-form">Edit</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Add Schedule Form -->
+
+        <section class="card" id="schedule-form">
+
+            <h2>Add Study Session</h2>
+
+            <form class="task-form">
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Session Title</label>
+                        <input type="text" placeholder="Example: DBMS Revision">
+                    </div>
+
+                    <div>
+                        <label>Subject</label>
+                        <input type="text" placeholder="Enter subject">
+                    </div>
+
+                    <div>
+                        <label>Day</label>
+                        <select>
+                            <option>Monday</option>
+                            <option>Tuesday</option>
+                            <option>Wednesday</option>
+                            <option>Thursday</option>
+                            <option>Friday</option>
+                            <option>Saturday</option>
+                            <option>Sunday</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Start Time</label>
+                        <input type="time">
+                    </div>
+
+                    <div>
+                        <label>End Time</label>
+                        <input type="time">
+                    </div>
+
+                </div>
+
+                <label>Notes</label>
+
+                <textarea rows="4" placeholder="Add notes for this session"></textarea>
+
+                <button type="submit" class="main-btn">
+                    Add Session
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
